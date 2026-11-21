@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="travel_recommendation.js" defer></script>
+        <title>Travel Recommendation List</title>
+    </head>
+    <style>
+        body {
+    background-image: url('Tokyo.jpg');
+    background-size: cover;       /* Scales the image to cover the entire screen */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from tiling */
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+    margin: 0;
+    min-height: 100vh;            /* Ensures body takes up at least the full viewport height */
+  }
+    </style>
+    <body>
+        <nav style="border: 1px solid black; display: flex;" >
+            <ul style="display: flex; padding: 5px; gap: 20px;">
+                <li>
+                    <a href="travel_recommendation.html">Home</a>
+                </li>
+                <li>
+                    <a href="about_us.html">About Us</a>
+                </li>
+                <li>
+                <a href="contact_us.html">Contact Us</a>
+                </li>
+            </ul>
+            <form>
+                <input type="text" id="searchbar">
+                <button type="reset" onclick = Clear()>Clear</button>
+                <button type="button" onclick = Search()>Search</button>
+            </form>
+        </nav>
+        <h1 style="colour: white; text: bold;">Welcome To My Travel Recommendation Website!</h1>
+        <p>This travel recommendation website includes many exciting and beautiful destinations.</p>
+
+        <div style="display:grid;" id="search_results">
+            <div id="1" style="display : flex; gap:50px; border: 1px; background-color: white;"></div>
+            <div id="2" style="display : flex; gap:50px; border: 1px; background-color: white;"></div>
+            <div id="3" style="display : flex; gap:50px; border: 1px; background-color: white;"></div>
+            <div id="4" style="display : flex; gap:50px; border: 1px; background-color: white;"></div>
+            <div id="5" style="display : flex; gap:50px; border: 1px; background-color: white;"></div>
+            <div id="6" style="display : flex; gap:50px; border: 1px; background-color: white;"></div>
+            <div id="7" style="display : flex; gap:50px; border: 1px; background-color: white;"></div>
+            <div id="8" style="display : flex; gap:50px; border: 1px; background-color: white;"></div>
+        </div>
+    </body>

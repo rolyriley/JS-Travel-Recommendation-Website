@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="travel_recommendation.js" defer></script>
+        <title>Travel Recommendation List</title>
+    </head>
+    <style>
+        body {
+    background-image: url('Tokyo.jpg');
+    background-size: cover;       /* Scales the image to cover the entire screen */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from tiling */
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+    margin: 0;
+    min-height: 100vh;            /* Ensures body takes up at least the full viewport height */
+  }
+    </style>
+    <body>
+        <nav style="border: 1px solid black; display: flex;" >
+            <ul style="display: flex; padding: 5px; gap: 20px;">
+                <li>
+                    <a href="travel_recommendation.html">Home</a>
+                </li>
+                <li>
+                    <a href="about_us.html">About Us</a>
+                </li>
+                <li>
+                <a href="contact_us.html">Contact Us</a>
+                </li>
+            </ul>
+            <form>
+                <input type="text" id="searchbar">
+                <button type="reset" id="clear">Clear</button>
+                <button type="submit" id="submit" >Search</button>
+            </form>
+        </nav>
+        <h1 style="colour: white; text: bold;">About Us</h1>
+        <p>We are a company that provides travelling services to all individuals, and we will try our best to make sure you have an unforgettable trip.</p>
+        <h1 style="colour: white; text: bold;">Our Team</h1>
+        <div>
+            <div>John Doe</div>
+            <p>CEO</p>
+        </div>
+        <div>
+            <div>Riley Leong</div>
+            <p>Main Web Developer</p>
+        </div>
+    </body>
